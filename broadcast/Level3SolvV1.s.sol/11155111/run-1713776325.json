@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "hash": "0xf7e246b343a8d8ef266c71ec96a21956dd6bbb69adda46910af04c0054073c36",
+      "transactionType": "CALL",
+      "contractName": "src/Lev3SolvHelper.sol:Lev3SolvHelper",
+      "contractAddress": "0xC7f2Cf4845C6db0e1a1e91ED41Bcd0FcC1b0E141",
+      "function": "guessFlip(address)",
+      "arguments": [
+        "0xBc75d8f7A84f07f5fCD31A3572E5f0754366104f"
+      ],
+      "transaction": {
+        "type": "0x02",
+        "from": "0xf4005d2dc95eda6b361a179f4af8025a69faf6e3",
+        "to": "0xc7f2cf4845c6db0e1a1e91ed41bcd0fcc1b0e141",
+        "gas": "0x73a2",
+        "value": "0x0",
+        "data": "0xd7e2d986000000000000000000000000bc75d8f7a84f07f5fcd31a3572e5f0754366104f",
+        "nonce": "0x102",
+        "accessList": []
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0xf7e246b343a8d8ef266c71ec96a21956dd6bbb69adda46910af04c0054073c36"
+  ],
+  "returns": {},
+  "timestamp": 1713776325,
+  "chain": 11155111,
+  "multi": false,
+  "commit": "4730f69"
+}
