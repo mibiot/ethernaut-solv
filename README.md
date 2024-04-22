@@ -1,66 +1,29 @@
-## Foundry
+## Solving Ethernaut quests usind Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Solidity code I write to solve Ethernaut quest https://ethernaut.openzeppelin.com/ on Sepolia test network. The rep is updated accordingly to the solving process.
 
-Foundry consists of:
+# Getting Started
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Requirements
 
-## Documentation
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
+- [foundry](https://getfoundry.sh/)
+  - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
 
-https://book.getfoundry.sh/
+## Quickstart
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
 ```
-
-### Test
-
-```shell
-$ forge test
+git clone https://github.com/mibiot/ethernaut-solv
+cd ethernaut-solv
+forge build
 ```
+# Usage
 
-### Format
+1. Create an instance of a contract at https://ethernaut.openzeppelin.com/ . Solutions to the levels can be found under Script folder. Each Level-contract has a script to solve the set tasks to complite the level. 
+3. Change the instance address in the script that solves particular level.
+2. Run the script: forge script *(ScriptName)* --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast. Some levels require additional interactions with some contracts using "cast..."
+3. Submit the instance at https://ethernaut.openzeppelin.com/
 
-```shell
-$ forge fmt
-```
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# Thank you!

@@ -1,0 +1,9 @@
+{
+    "security.olympix.project.includePath": "/src",
+    "[solidity]": {
+    "editor.defaultFormatter": "tintinweb.solidity-visual-auditor",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+    }
+    
+}
