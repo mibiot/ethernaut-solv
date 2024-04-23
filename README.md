@@ -1,4 +1,4 @@
-## Solving Ethernaut quests usind Foundry
+## Solving Ethernaut quests using Foundry
 
 Solidity code I write to solve Ethernaut quest https://ethernaut.openzeppelin.com/ on Sepolia test network. The rep is updated accordingly to the solving process.
 
