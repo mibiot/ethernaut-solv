@@ -16,16 +16,13 @@ contract GuessFlip {
 }
 
 contract Level3CoinFlipSolv is Script {
-
     function run() external {
+        Level3CoinFlip level3CoinFlip = Level3CoinFlip((0x5339dd5412A3517a67a34532276F177C349a8F0A));
 
-    Level3CoinFlip level3CoinFlip = Level3CoinFlip((0x5339dd5412A3517a67a34532276F177C349a8F0A));
+        vm.startBroadcast();
 
-    vm.startBroadcast();
-    
-    new GuessFlip(level3CoinFlip);
-    console.log("consecutiveWins: ", level3CoinFlip.consecutiveWins());
-    vm.stopBroadcast();
+        new GuessFlip(level3CoinFlip);
+        console.log("consecutiveWins: ", level3CoinFlip.consecutiveWins());
+        vm.stopBroadcast();
+    }
 }
-}
- 

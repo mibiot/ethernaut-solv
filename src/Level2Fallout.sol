@@ -4,14 +4,13 @@ pragma solidity ^0.6.0;
 import {SafeMath} from "@openzeppelin-contracts-06/contracts/math/SafeMath.sol";
 
 contract Level2Fallout {
-
     using SafeMath for uint256;
 
     mapping(address => uint256) allocations;
     address payable public owner;
 
     /* constructor */
-        function Fal1out() public payable {
+    function Fal1out() public payable {
         owner = msg.sender;
         allocations[owner] = msg.value;
     }
